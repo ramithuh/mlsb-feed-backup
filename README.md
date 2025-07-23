@@ -57,14 +57,19 @@ git init
 git add .
 git commit -m "MLSB feed static backup"
 git remote add origin https://github.com/yourusername/mlsb-feed-backup.git
-git push -u origin main
+git push -u origin master
+
+# Add the generated _site directory with all the static files
+git add _site/
+git commit -m "Add generated static site files"
+git push origin master
 ```
 
 ### 3. Enable GitHub Pages
 - Go to repository Settings → Pages  
 - Source: "Deploy from a branch"
-- Branch: `main` 
-- Folder: `/ (root)` or `/_site` 
+- Branch: `master` (or whatever branch you pushed to)
+- Folder: `/_site` (this is where your AT Protocol endpoints are)
 - Custom domain: (Optional) Set your backup domain
 
 **That's it!** No GitHub Actions, no secrets, no periodic updates needed.
