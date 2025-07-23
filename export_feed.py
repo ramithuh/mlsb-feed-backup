@@ -28,7 +28,7 @@ from server import config
 OUTPUT_DIR = os.path.join(script_dir, "docs")
 STICKY_POSTS = [
     "at://did:plc:a33wx75tk3vfmbqb6brpbxo4/app.bsky.feed.post/3leve7zx2zk2r",
-    "at://did:plc:a33wx75tk3vfmbqb6brpbxo4/app.bsky.feed.post/3lulf4zaacc2o"
+    # "at://did:plc:a33wx75tk3vfmbqb6brpbxo4/app.bsky.feed.post/3lulf4zaacc2o"
 ]
 
 def ensure_dirs():
