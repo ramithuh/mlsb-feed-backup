@@ -1,0 +1,11 @@
+{
+  "encoding": "application/json",
+  "body": {
+    "did": "did:web:mlsb.ramith.io",
+    "feeds": [
+      {
+        "uri": "at://did:plc:57azw27ix6arhpw6lmkunmp7/app.bsky.feed.generator/MLSB"
+      }
+    ]
+  }
+}
